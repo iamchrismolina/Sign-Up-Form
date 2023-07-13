@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <style>
+    @font-face {
+      font-family: Norse;
+      src: url("./fonts/Norse-Bold.otf") format("opentype");
+    }
+  </style>
+  <body>
+    <div class="side-hero">
+      <div class="side-hero__img-container">
+        <img
+          class="side-hero__img"
+          src="./images/odin-lined.png"
+          width="20%"
+          height="100%"
+        />
+        <h2 class="side-hero__text">ODIN</h2>
+      </div>
+      <footer class="side-hero__footer">
+        <p class="side-hero__footer-text">
+          Photo by
+          <a
+            class="side-hero__footer-author"
+            href="https://unsplash.com/photos/25xggax4bSA"
+            >Halie</a
+          >
+          on
+          <a class="side-hero__footer-website" href="https://unsplash.com/"
+            >Unsplash</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <div class="form">
+      <div class="form__header">
+        <p class="form__header-paragraph header-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <i>now</i> to get started.
+        </p>
+        <br />
+        <p class="form__header-footer header-text">You know you want to.</p>
+      </div>
+
+      <div class="form__sign-up">
+        <p class="form__intro">Let's do this!</p>
+        <br />
+        <form id="formContent" class="form__content">
+          <div class="form__input-firstname">
+            <label for="firstname">FIRST NAME</label>
+            <br />
+            <input type="text" id="firstname" class="form__input" required />
+          </div>
+          <div class="form__input-lastname">
+            <label for="lastname">LAST NAME</label>
+            <br />
+            <input type="text" id="lastname" class="form__input" required />
+          </div>
+          <div class="form__input-email">
+            <label for="email">EMAIL</label>
+            <br />
+            <input type="email" id="email" class="form__input" required />
+          </div>
+          <div class="form__input-phone">
+            <label for="phone">PHONE NUMBER</label>
+            <br />
+            <input type="tel" id="phone" class="form__input" required />
+          </div>
+          <div class="form__input-password">
+            <label for="password">PASSWORD</label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              class="form__input erorr"
+              required
+            />
+          </div>
+          <div class="form__input-confirmpassword">
+            <label for="confirmpassword">CONFIRM PASSWORD</label>
+            <br />
+            <input
+              type="password"
+              id="confirmpassword"
+              class="form__input erorr"
+              required
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="form__submit-section">
+        <div id="formMsg" class=""></div>
+        <button id="form__submit-btn" class="form__submit-btn">
+          Create Account
+        </button>
+        <p class="form__submit-cta">
+          Already have an account? <a href="login.com">Log in</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
